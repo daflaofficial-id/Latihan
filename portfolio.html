@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Karya Dafla</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Dafla Logo" width="50">
+        <span>DAFLA</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Portofolio</a></li>
+        <li><a href="testimoni.html">Testimoni</a></li>
+        <li><a href="index.html#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page portfolio-page">
+    <a href="index.html" class="back-link">← Kembali ke Beranda</a>
+    <h1>Portofolio Karya Dafla</h1>
+    <p class="subtitle">Kumpulan karya website, desain, poster, banner, dan berbagai proyek digital yang telah dibuat oleh Dafla.</p>
+
+    <!-- Filter Kategori -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-category="all">Semua</button>
+      <button class="filter-btn" data-category="Banner">Banner</button>
+      <button class="filter-btn" data-category="Poster">Poster</button>
+      <button class="filter-btn" data-category="Social Media">Social Media</button>
+      <button class="filter-btn" data-category="Website">Website</button>
+    </div>
+
+    <!-- Urutan -->
+    <div class="sort-options">
+      <label>Urutkan: </label>
+      <select id="sortSelect">
+        <option value="az">A-Z (Abjad)</option>
+        <!-- Bisa ditambah Z-A jika perlu -->
+      </select>
+    </div>
+
+    <!-- Grid Portofolio -->
+    <div class="portfolio-grid" id="portfolioGrid"></div>
+
+    <!-- Modal Detail -->
+    <div class="modal" id="detailModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <!-- footer sama, bisa di-include tapi untuk kemandirian salin -->
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>DAFLA</h3>
+        <p>Create • Design • Build</p>
+      </div>
+      <div class="footer-contact">
+        <p>Instagram: <a href="https://instagram.com/dafla_official">@dafla_official</a></p>
+        <p>Email: <a href="mailto:daflaofficial.id@gmail.com">daflaofficial.id@gmail.com</a></p>
+      </div>
+      <div class="footer-copy">
+        <p>Copyright © 2026 DAFLA. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
